@@ -1,0 +1,16 @@
+# STELLARS Entertainment
+## Requerimientos
+
+- asgiref==3.5.2
+- autopep8==1.7.0
+- Django==3.2.14
+- Pillow==9.2.0
+- psycopg2==2.9.3
+- pycodestyle==2.9.1
+- pytz==2022.4
+- sqlparse==0.4.3
+- toml==0.10.2
+
+## Intalación
+
+_A completar._
