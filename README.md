@@ -7,6 +7,8 @@
 - Pillow==9.2.0
 - psycopg2==2.9.3
 - pycodestyle==2.9.1
+- python-decouple==3.6
+- python-dotenv==0.21.0
 - pytz==2022.4
 - sqlparse==0.4.3
 - toml==0.10.2
