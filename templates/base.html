@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+	<head>
+		{% load static %}
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="{% static 'stellarsApp/public/css/styles.css' %}"
+			rel="stylesheet">
+		<!-- Boxicons CDN link -->
+		<link
+			href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		<title>S T E L L A R S</title>
+		<link rel="icon" href="{% static 'stellarsApp/public/img/star-white-icon.ico' %}">
+	</head>
+	<body>
+
+		<!-- Navbar lateral -->
+		<div class="sidebar closed">
+			<div class="logo-details">
+				<img class="logo-img" src="{% static 'stellarsApp/public/img/star-white.png' %}" alt="Logo Stellars">
+				<span class="logo_name1">S T E L L A R S</span>
+				<img class="logo-line" src="{% static 'stellarsApp/public/img/line-white.png' %}" alt="Logo Stellars">
+				<span class="logo_name2">E N T E R T A I N M E N T</span>
+			</div>
+			<ul class="nav-links">
+				<li>
+					<a href="#">
+						<i class='bx bx-home' ></i>
+						<span class="link_name">Inicio</span>
+					</a>
+					<ul class="sub-menu blank">
+						<li><a class="link_name" href="#">Inicio</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="icon-link">
+						<a href="#">
+							<i class='bx bx-map'></i>
+							<span class="link_name">Salas</span>
+						</a>
+						<i class='bx bx-chevron-down arrow'></i>
+					</div>
+					<ul class="sub-menu">
+						<li><a class="link_name" href="#">Salas</a></li>
+						<li><a href="#">Abasto Shopping</a></li>
+						<li><a href="#">Dot Baires Shopping</a></li>
+						<li><a href="#">Caballito</a></li>
+						<li><a href="#">Palermo</a></li>
+						<li><a href="#">Puerto Madero</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class='bx bx-dollar-circle'></i>
+						<span class="link_name">Promociones</span>
+					</a>
+					<ul class="sub-menu blank">
+						<li><a class="link_name" href="#">Promociones</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class='bx bx-movie-play'></i>
+						<span class="link_name">Preestrenos</span>
+					</a>
+					<ul class="sub-menu blank">
+						<li><a class="link_name" href="#">Preestrenos</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class='bx bx-comment-edit'></i>
+						<span class="link_name">Blog</span>
+					</a>
+					<ul class="sub-menu blank">
+						<li><a class="link_name" href="#">Blog</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Contenido dinámico -->
+		{% block content %}
+		{% endblock content %}
+
+	</body>
+</html>
