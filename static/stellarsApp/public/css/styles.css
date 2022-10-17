@@ -134,3 +134,156 @@
     pointer-events: auto;
     /* padding: 3px 20px 6px 16px; */
 }
+
+
+/* BLOG */
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+.bg-steel {
+  background-color: #5f788a;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+
+
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3;
+
+}
+
+.article-metadata a{
+  /* font-size: large; */
+  text-decoration: none;
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+.nav{
+  justify-content: space-between;
+}
+
+.media{
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 0px;
+}
+.media:hover{
+  transform: scale(1.05);
+  background-color: #cbd5db;
+  border-radius: 5px;
+}
+
+.media-body{
+  display: flex;
+  flex-direction: column;
+}
+
+.posts-container{
+  margin-left:300px;
+}
+
+.header-post{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+
+.val-fieldset {
+width:100px;
+border:none;
+font-weight:bold;
+font-size:12px;
+/* background-color: red; */
+}
+.rating {
+width: 100px;
+height: 21px;
+display: block;
+background:url(http://lh5.googleusercontent.com/-Sp-iHFztZdc/UVD89O9oM1I/AAAAAAAAEU0/Xh-FBDaWyJY/s000/estrellas.png) 0 0 no-repeat;
+}
+.val-0 {background-position: -100px -0;}
+.val-1 {background-position: -81px -21px;}
+.val-2 {background-position: -81px 0;}
+.val-3 {background-position: -61px -21px;}
+.val-4 {background-position: -60px 0;}
+.val-5 {background-position: -40px -21px;}
+.val-6 {background-position: -40px 0;}
+.val-7 {background-position: -21px -21px;}
+.val-8 {background-position: -21px 0;}
+.val-9 {background-position: 0 -21px;}
+.val-10 {background-position: 0 0;}
+
+.subtitle-post{
+  display: flex;
+  align-items: center;
+  gap:10px
+}
