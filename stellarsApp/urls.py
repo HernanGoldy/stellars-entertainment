@@ -5,7 +5,7 @@ from stellarsApp import views
 
 
 urlpatterns = [
-    path('/', views.home, name="Inicio"),
+    path('', views.home, name="Inicio"),
     path('lounges/', views.lounges, name="Salas"),
     path('promotions/', views.promotions, name="Promociones"),
     path('previews/', views.previews, name="Preestrenos"),
