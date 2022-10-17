@@ -3,21 +3,31 @@
 {% block content %}
 
 <!-- Contenido del Blog -->
-<h3>Stellar-Entertainment Blog</h3>
-{% for post in posts %}
-            <article class="media content-section">
-                <!--<img class="rounded-circle article-img" src="{{url_for('static', filename='profile_pics/'+ post.author.image_file)}}">-->
-                <img class="rounded-circle article-img" src="{% static 'blog/'+post.imageAvatar %}">
-                <div class="media-body">
-                    <div class="article-metadata">
-                        <!--<a class="mr-2" href="{{url_for('users.user_posts',username=post.author.username)}}">{{ post.author.username }}</a>-->
-                        <a class="mr-2" href="#"</a>
-                        <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
-                    </div>
-                    <!--<h4><a class="article-title" href="{{url_for('posts.post',post_id=post.id)}}">{{ post.title }}</a></h4>-->
-                    <h4><a class="article-title" href="#">{{ post.title }}</a></h4>
-                    <p class="article-content">{{ post.content }}</p>
+<div class="posts-container">
+    <h3>Stellar-Entertainment Blog</h3>
+
+    {% for post in posts %}
+    <article class="media content-section">
+
+        <div class="header-post">
+            <img class="rounded-circle article-img" src="{% static 'blog/' %}{{post.imageAvatar}}">
+            <h4 class="subtitle">{{post.user_name}}</h4>
+        </div>
+            <div class="media-body">
+                <div class="article-metadata">
+                    <small class="text-muted">{{ post.date_posted}}</small>
                 </div>
-            </article>
-        {% endfor %}
+
+                <div class="subtitle-post">
+                    <h4>
+                        <a class="article-title" href="#"><i class='bx bx-movie'></i>{{ post.title }}</a>
+                    </h4>
+                    {% comment %} https://www.ciudadblogger.com/2013/04/valoracion-de-estrellas-por-parte-del-autor.html {% endcomment %}
+                    <fieldset class="val-fieldset"><span class="rating val-{{post.calification}}"></span></fieldset>
+                </div>
+                <p class="article-content">{{ post.content }}</p>
+            </div>
+    </article>
+    {% endfor %}
+</div>
 {% endblock content %}
