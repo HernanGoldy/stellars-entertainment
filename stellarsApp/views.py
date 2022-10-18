@@ -11,7 +11,7 @@ posts=[
         "user_name": "María",
         "imageAvatar":"avatar1.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":4,
     },
     {
         "title": "A Second Post",
@@ -20,7 +20,7 @@ posts=[
         "user_name": "Patricio",
         "imageAvatar":"avatar2.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":8,
     },
     {
         "title": "Top 5 Programming Lanaguages",
@@ -29,7 +29,7 @@ posts=[
         "user_name": "Juan",
         "imageAvatar":"avatar3.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "Sublime Text Tips and Tricks",
@@ -38,7 +38,7 @@ posts=[
         "user_name": "María",
         "imageAvatar":"avatar1.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "Best Python IDEs",
@@ -47,7 +47,7 @@ posts=[
         "user_name": "Juan",
         "imageAvatar":"avatar3.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "Flask vs Django - Which Is Better?",
@@ -56,7 +56,7 @@ posts=[
         "user_name": "Patricio",
         "imageAvatar":"avatar2.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "You Won't Believe These Clickbait Titles!",
@@ -65,7 +65,7 @@ posts=[
         "user_name": "Belén",
         "imageAvatar":"avatar4.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "These Beers Will Improve Your Programming",
@@ -74,7 +74,7 @@ posts=[
         "user_name": "María",
         "imageAvatar":"avatar1.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "List of PyCon 2018 Talks",
@@ -83,7 +83,7 @@ posts=[
         "user_name": "María",
         "imageAvatar":"avatar1.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "How Dogs in the Workplace Boosts Productivity",
@@ -92,7 +92,7 @@ posts=[
         "user_name": "Belén",
         "imageAvatar":"avatar4.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "The Best Programming Podcasts",
@@ -101,7 +101,7 @@ posts=[
         "user_name": "María",
         "imageAvatar":"avatar1.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "Tips for Public Speaking",
@@ -110,7 +110,7 @@ posts=[
         "user_name": "Patricio",
         "imageAvatar":"avatar2.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "Best Programmers Throughout History",
@@ -119,7 +119,7 @@ posts=[
         "user_name": "Patricio",
         "imageAvatar":"avatar2.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "How To Create A YouTube Channel",
@@ -128,7 +128,7 @@ posts=[
         "user_name": "Belén",
         "imageAvatar":"avatar4.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "How I Record My Videos",
@@ -137,7 +137,7 @@ posts=[
         "user_name": "María",
         "imageAvatar":"avatar1.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "Python and Physics",
@@ -146,7 +146,7 @@ posts=[
         "user_name": "María",
         "imageAvatar":"avatar1.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "Just A Few More Healines Should Do It",
@@ -155,7 +155,7 @@ posts=[
         "user_name": "Juan",
         "imageAvatar":"avatar3.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "Music To Listen To While Coding",
@@ -164,7 +164,7 @@ posts=[
         "user_name": "María",
         "imageAvatar":"avatar1.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "5 Tips for Writing Catchy Headlines",
@@ -173,7 +173,7 @@ posts=[
         "user_name": "Patricio",
         "imageAvatar":"avatar2.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "The Rise of Data Science",
@@ -182,7 +182,7 @@ posts=[
         "user_name": "Belén",
         "imageAvatar":"avatar4.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "Best Videos For Learning Python",
@@ -191,7 +191,7 @@ posts=[
         "user_name": "María",
         "imageAvatar":"avatar1.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "Top 10 Python Tips and Tricks",
@@ -200,7 +200,7 @@ posts=[
         "user_name": "María",
         "imageAvatar":"avatar1.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "Top 5 YouTube Channels For Learning Programming",
@@ -209,7 +209,7 @@ posts=[
         "user_name": "Patricio",
         "imageAvatar":"avatar2.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     },
     {
         "title": "My Latest Updated Post",
@@ -218,7 +218,7 @@ posts=[
         "user_name": "María",
         "imageAvatar":"avatar1.png",
         "date_posted":datetime.now(),
-        "calification":5,
+        "rating":5,
     }
 ]
 def home(request):
