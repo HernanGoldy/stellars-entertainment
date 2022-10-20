@@ -19,19 +19,36 @@
 
 		<!-- Start topbar  -->
 
-		<div class="topbar-content">
-			<section class="topbar-section">
-				<div class="logo-details">
-					<img class="logo-img" src="{% static 'stellarsApp/public/img/star-white.png' %}" alt="Logo Stellars">
-					<span class="logo_name1">S T E L L A R S</span>
-					<img class="logo-line" src="{% static 'stellarsApp/public/img/line-white.png' %}" alt="Logo Stellars">
-					<span class="logo_name2">E N T E R T A I N M E N T</span>
-				</div>
+		<div class="topbar">
+			<section class="topbar-logo">
+				<img class="stellars-logo" src="{% static 'stellarsApp/public/img/logo-white.png' %}" alt="">
 			</section>
-			<div class="section">
-				<span>INICIO</span>
+			<div class="topnavbar">
+				<div class="section">
+					<span>INICIO</span>
+				</div>
+				<div class="profile">
+					<div>
+						<button class="cart">
+							<i class='bx bx-cart'></i>
+						</button>
+						<button class="notifications">
+							<i class='bx bx-bell' ></i>
+						</button>
+					</div>
+					<div class="profile-content">
+						<div class="profile-details">
+							<div>
+								<img class="profile-photo" src="{% static 'stellarsApp/public/img/marvin.jpg' %}">
+							</div>
+							<button class="profile-name">
+								Nombre
+								<span><i class='bx bx-chevron-down' ></i></span>
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div></div>
 		</div>
 
 		<!-- End topbar -->
@@ -43,20 +60,12 @@
 		<!-- Start sidebar -->
 
 		<div class="sidebar">
-			{% comment %} <div class="logo-details">
-				<img class="logo-img" src="{% static 'stellarsApp/public/img/star-white.png' %}" alt="Logo Stellars">
-				<span class="logo_name1">S T E L L A R S</span>
-				<img class="logo-line" src="{% static 'stellarsApp/public/img/line-white.png' %}" alt="Logo Stellars">
-				<span class="logo_name2">E N T E R T A I N M E N T</span>
-			</div> {% endcomment %}
 			<ul class="nav-links">
 				<li>
 					<a href="#">
 						<i class='bx bx-home' ></i>
 						<span class="link_name">Inicio</span>
 					</a>
-					<ul class="sub-menu blank">
-					</ul>
 				</li>
 				<li>
 					<div class="icon-link">
@@ -79,21 +88,18 @@
 						<i class='bx bx-dollar-circle'></i>
 						<span class="link_name">Promociones</span>
 					</a>
-					<ul class="sub-menu blank"></ul>
 				</li>
 				<li>
 					<a href="#">
 						<i class='bx bx-movie-play'></i>
 						<span class="link_name">Preestrenos</span>
 					</a>
-					<ul class="sub-menu blank"></ul>
 				</li>
 				<li>
 					<a href="#">
 						<i class='bx bx-comment-edit'></i>
 						<span class="link_name">Blog</span>
 					</a>
-					<ul class="sub-menu blank"></ul>
 				</li>
 			</ul>
 		</div>
