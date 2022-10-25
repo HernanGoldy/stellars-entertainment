@@ -11,4 +11,5 @@ urlpatterns = [
     path('previews', views.previews, name="Preestrenos"),
     path('blog', views.blog, name="Blog"),
     path('base', views.base, name="Base"),
+    
 ]
