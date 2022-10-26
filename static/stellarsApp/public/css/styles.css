@@ -15,6 +15,9 @@ h1 {
     font-size: 300px;
 }
 
+
+/* --------------- sidebar --------------- */
+
 .sidebar {
     position: fixed;
     z-index: 1;
@@ -78,9 +81,6 @@ h1 {
     transition: all 0.3s ease;
 }
 
-/* .sidebar .nav-links li i:hover {
-    color: #32d4a4;
-} */
 .sidebar .nav-links li.showMenu i.arrow {
     transform: rotate(180deg);
 }
@@ -135,7 +135,7 @@ h1 {
 }
 
 
-/*--------------- topbar ---------------*/
+/* --------------- topbar --------------- */
 .topbar {
     display: flex;
     position: fixed;
@@ -186,4 +186,79 @@ h1 {
 .profile-photo {
     height: 50px;
     width: auto;
+}
+
+
+/* --------------- previews -------------- */
+
+.preview-container {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    width: calc(100% - 78px);
+    margin: 0 0 0 78px;
+    font-size: 20px;
+    padding: 88px 5px 5px;
+    /* background-color: aqua; */
+}
+
+.preview {
+    position: relative;
+    display: flex;
+    min-height: auto;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: rgb(199, 199, 199);
+}
+
+.right {
+    margin: 5px 5px 5px 2.5px;
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 2.5px 5px 5px;
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.preview-title {
+    margin: 5px 5px 2.5px 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.preview-description {
+    margin: 2.5px 5px 2.5px 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 150px;
+}
+
+.preview-trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5px 5px 5px 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    min-height: 60%;
+}
+
+.trailer {
+    position: relative;
+    margin: 2.5px 5px 5px 5px;
+    padding: 0;
+    border-radius: 5px;
+    min-width: 100vh;
+    min-height: 540px;
 }
