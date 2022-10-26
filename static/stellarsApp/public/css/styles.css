@@ -138,10 +138,10 @@ h1 {
 /* --------------- topbar --------------- */
 .topbar {
     display: flex;
+    flex-direction: row;
     position: fixed;
     z-index: 2;
-    /* background: #11101d; */
-    background: red;
+    background: #11101d;
     width: 100%;
 }
 
@@ -162,7 +162,7 @@ h1 {
 }
 
 .section {
-    margin-left: 50px;
+    margin-left: 40px;
     display: flex;
     align-items: center;
     font-size: 30px;
@@ -170,64 +170,43 @@ h1 {
     color: #fff;
 }
 
-.section:hover {
-    color: #32d4a4;
-}
-
 .profile {
     display: flex;
-    margin-right: 0%;
-}
-
-.profile-content {
-    display: flex;
-}
-
-.profile-photo {
-    height: 50px;
-    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 235px;
+    margin-right: 50px;
 }
 
 
 /* --------------- previews -------------- */
 
 .preview-container {
-    display: flex;
     position: relative;
+    display: flex;
     min-height: 100vh;
-    width: calc(100% - 78px);
     margin: 0 0 0 78px;
+    padding: 87px 5px 5px;
     font-size: 20px;
-    padding: 88px 5px 5px;
-    /* background-color: aqua; */
-}
-
-.preview {
-    position: relative;
-    display: flex;
-    min-height: auto;
-    width: 100%;
-    border: 2px solid black;
-    border-radius: 5px;
-    background: rgb(199, 199, 199);
+    background-color: #32d4a4;
 }
 
 .right {
     margin: 5px 5px 5px 2.5px;
-    background: #fff;
+    width: 35%;
     border: 2px solid black;
     border-radius: 5px;
-    width: 60%;
+    background: #fff;
 }
 
 .left {
     display: flex;
     flex-direction: column;
     margin: 5px 2.5px 5px 5px;
-    background: #fff;
+    width: 65%;
     border: 2px solid black;
     border-radius: 5px;
-    width: 100%;
+    background: #fff;
 }
 
 .preview-title {
@@ -259,6 +238,24 @@ h1 {
     margin: 2.5px 5px 5px 5px;
     padding: 0;
     border-radius: 5px;
-    min-width: 100vh;
+    min-width: 250px;
     min-height: 540px;
+}
+
+
+@media (max-width: 1200px) {
+    .preview-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .right {
+        width: 100%;
+        margin: 2.5px 5px 5px 5px;
+    }
+
+    .left {
+        width: 100%;
+        margin: 2.5px 5px 5px 5px;
+    }
 }
