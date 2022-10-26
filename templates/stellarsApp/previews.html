@@ -13,42 +13,42 @@
         </div>
         <iframe class="trailer" src="{{ film.trailer }}" frameborder="0"></iframe>
     </div>
-    <div class="right">
-        <table id="data-items">
-            <tr>
-                <td class="d-title">Título original:</td>
-                <td class="d-content">{{ film.original }}</td>
-            </tr>
-            <tr>
-                <td class="d-title">País:</td>
-                <td class="d-content">{{ film.country }}</td>
-            </tr>
-            <tr>
-                <td class="d-title">Género:</td>
-                <td class="d-content">{{ film.genre }}</td>
-            </tr>
-            <tr>
-                <td class="d-title">Año:</td>
-                <td class="d-content">{{ film.year }}</td>
-            </tr>
-            <tr>
-                <td class="d-title">Dirección:</td>
-                <td class="d-content">{{ film.direction }}</td>
-            </tr>
-            <tr>
-                <td class="d-title">Protagonistas:</td>
-                <td class="d-content">{{ film.cast }}
-                </td>
-            </tr>
-            <tr>
-                <td class="d-title">Duración</td>
-                <td class="d-content">{{ film.duration }}</td>
-            </tr>
-            <tr>
-                <td class="d-title">Distribuidora:</td>
-                <td class="d-content">{{film.distribution }}</td>
-            </tr>
-        </table>
+        <table class="right table table-dark table-striped">
+            <tbody>
+                <tr>
+                    <th scope="row">Título original:</th>
+                    <td class="d-content">{{ film.original }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">País:</th>
+                    <td class="d-content">{{ film.country }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Género:</th>
+                    <td class="d-content">{{ film.genre }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Año:</th>
+                    <td class="d-content">{{ film.year }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Dirección:</th>
+                    <td class="d-content">{{ film.direction }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Protagonistas:</th>
+                    <td class="d-content">{{ film.cast }}
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Duración:</th>
+                    <td class="d-content">{{ film.duration }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Distribuidora:</th>
+                    <td class="d-content">{{film.distribution }}</td>
+                </tr>
+            </tbody>
     </div>
 </div>
 
