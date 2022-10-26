@@ -1,6 +1,69 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
+
+<div class="preview-container">
+    <div class="preview">
+
+        <div class="left">
+            <div class="preview-title">
+                <span id="name">{{ film.title }}</span><span id="features"> {{ film.title2 }}</span>
+            </div>
+            <div class="preview-description">
+                <p>{{ film.description }}</p>
+            </div>
+            <iframe class="preview-trailer" src="{{ film.trailer }}" frameborder="0"></iframe>
+        </div>
+
+        <div class="right">
+            <table id="data-items">
+                <tr>
+                    <td class="d-title">Título original:</td>
+                    <td class="d-content">{{ film.original }}</td>
+                </tr>
+                <tr>
+                    <td class="d-title">País:</td>
+                    <td class="d-content">{{ film.country }}</td>
+                </tr>
+                <tr>
+                    <td class="d-title">Género:</td>
+                    <td class="d-content">{{ film.genre }}</td>
+                </tr>
+                <tr>
+                    <td class="d-title">Año:</td>
+                    <td class="d-content">{{ film.year }}</td>
+                </tr>
+                <tr>
+                    <td class="d-title">Dirección:</td>
+                    <td class="d-content">{{ film.direction }}</td>
+                </tr>
+                <tr>
+                    <td class="d-title">Protagonistas:</td>
+                    <td class="d-content">{{ film.cast }}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="d-title">Duración</td>
+                    <td class="d-content">{{ film.duration }}</td>
+                </tr>
+                <tr>
+                    <td class="d-title">Distribuidora:</td>
+                    <td class="d-content">{{film.distribution }}</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+{% endblock content %}
+
+
+
+
+
+{% comment %} {% block content %}
 <div class="preview-container">
 <div id="title">
     <span id="name">{{ film.title }}  </span> <span id="features"> {{ film.title2 }}</span>
@@ -11,9 +74,9 @@
 </div>
 
 <div id="trailer" class="iframe-container">
-    <iframe 
-    src={{ film.trailer }} 
-    frameborder="0" 
+    <iframe
+    src={{ film.trailer }}
+    frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
 </div>
@@ -56,4 +119,4 @@
         </tr>
     </table>
 </div>
-{% endblock content %}
+{% endblock content %} {% endcomment %}

@@ -10,7 +10,7 @@ def lounges(request):
 def promotions(request):
     return render(request, 'stellarsApp/promotions.html')
 
-def previews(request):    
+def previews(request):
     film = {
             'title':'Amsterdam',
             'title2': 'Drama / Comedia / +13',
