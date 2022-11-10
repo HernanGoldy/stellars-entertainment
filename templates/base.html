@@ -11,11 +11,16 @@
 		<link
 			href="{% static 'stellarsApp/public/css/styles.css' %}"
 			rel="stylesheet">
-		<!-- Boxicons CDN link -->
-		<link
-			href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		
+			<!-- Boxicons CDN link -->
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 		<title>S T E L L A R S</title>
+		
 		<link rel="icon" href="{% static 'stellarsApp/public/img/star-white-icon.ico' %}">
+
+		<!-- Agregado por Max - Iconos redes sociales footer -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 	</head>
 	<body>
 
@@ -96,6 +101,44 @@
 		<script src="{% static 'stellarsApp/public/js/base.js' %}"></script>
 
 		<!-- Contenido dinámico -->
+
+		<!-- Inicio Footer -->
+
+		<footer class="footer">			
+			<div class="row-footer">
+			   <div class="footer-col">
+				<div class="presentation"> 	
+				<h4>Stellar Entertainment</h4>
+				 	 		<ul>
+				   			<li><a href="#">Quienes somos</a></li>
+				   			<li><a href="#">Salas</a></li>
+				   			<li><a href="#">Contactanos</a></li>
+				 		</ul>
+					</div>
+			   	</div>
+			   <div class="footer-col">
+					<div class="links-utiles">
+				 		<h4>Links útiles</h4>
+				 		<ul>
+				  			<li><a href="#">FAQ</a></li>
+				   			<li><a href="#">Blog</a></li>
+				   			<li><a href="#">Promociones</a></li>
+				 		</ul>
+					</div>
+				</div>
+			   <div class="footer-col">
+				 <h4>Seguinos en redes</h4>
+				 <div class="social-links">
+				   <a href="https://es-la.facebook.com/Cinemark-Hoyts-Argentina-105501327569610/?rf=1789990211277009"><i class="fab fa-facebook-f"></i></a>
+				   <a href="https://twitter.com/CinemarkHoyts?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+				   <a href="https://www.instagram.com/cinemarkhoyts/?hl=es"><i class="fab fa-instagram"></i></a>
+				   <a href="https://www.youtube.com/c/CinemarkHoyts"><i class="fab fa-youtube"></i></a>
+				 </div>
+			   </div>
+			</div>
+		</footer>
+	 
+		 <!-- Fin Footer -->
 
 		{% block content %}
 		{% endblock content %}
